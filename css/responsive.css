@@ -1,0 +1,391 @@
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Large Desktop (1200px et plus) - Default */
+
+/* Desktop (992px - 1199px) */
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .hero-title {
+        font-size: 3.5rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+}
+
+/* Tablet (768px - 991px) */
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .hero-line {
+        margin: 0 auto;
+    }
+    
+    .circle-gradient {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .gallery-thumbnails {
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    }
+    
+    .admin-header .container {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}
+
+/* Mobile Large (576px - 767px) */
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+        padding: 0 1rem;
+    }
+    
+    .logo {
+        font-size: 1.5rem;
+    }
+    
+    .hero {
+        padding: 2rem 0;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .circle-gradient {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .filter-group {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+    
+    .filter-group::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .filter-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .project-header h1 {
+        font-size: 2rem;
+    }
+    
+    .project-header p {
+        font-size: 1rem;
+    }
+    
+    .gallery-controls {
+        padding: 0 0.5rem;
+    }
+    
+    .gallery-btn {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .gallery-thumbnails {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .login-box {
+        padding: 1.5rem;
+    }
+    
+    .login-title {
+        font-size: 1.5rem;
+    }
+    
+    .form-card {
+        padding: 1rem;
+    }
+    
+    .admin-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .admin-project-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+}
+
+/* Mobile (max 575px) */
+@media (max-width: 575px) {
+    .container {
+        padding: 0 0.75rem;
+    }
+    
+    #main-header {
+        padding: 0.75rem 0;
+    }
+    
+    .logo {
+        font-size: 1.25rem;
+    }
+    
+    .btn-primary,
+    .btn-secondary {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+    
+    .hero {
+        padding: 1.5rem 0;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.875rem;
+    }
+    
+    .hero-line {
+        width: 80px;
+        height: 3px;
+    }
+    
+    .circle-gradient {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .filters {
+        margin-bottom: 1rem;
+    }
+    
+    .filter-btn {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.813rem;
+    }
+    
+    .projects {
+        padding-bottom: 1.5rem;
+    }
+    
+    .project-card {
+        border-radius: 1rem;
+    }
+    
+    .project-info {
+        padding: 0.75rem;
+    }
+    
+    .project-title {
+        font-size: 1.125rem;
+    }
+    
+    .project-description {
+        font-size: 0.813rem;
+    }
+    
+    .project-detail {
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+    
+    .project-header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .project-header p {
+        font-size: 0.875rem;
+    }
+    
+    .gallery-btn {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .gallery-thumbnails {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+    }
+    
+    .login-box {
+        padding: 1.25rem;
+    }
+    
+    .login-title {
+        font-size: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+    
+    .form-group label {
+        font-size: 0.875rem;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 0.625rem 0.875rem;
+        font-size: 0.875rem;
+    }
+    
+    .btn-block {
+        padding: 0.625rem 1rem;
+    }
+    
+    .admin-header {
+        padding: 0.75rem 0;
+    }
+    
+    .admin-header h1 {
+        font-size: 1.25rem;
+    }
+    
+    .btn-danger {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.813rem;
+    }
+    
+    .admin-section {
+        margin-bottom: 1.5rem;
+    }
+    
+    .form-card {
+        padding: 0.75rem;
+    }
+    
+    .images-preview {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .admin-project-item h3 {
+        font-size: 0.938rem;
+    }
+    
+    .admin-project-item p {
+        font-size: 0.75rem;
+    }
+}
+
+/* Mobile Très Petit (max 375px) */
+@media (max-width: 375px) {
+    .hero-title {
+        font-size: 1.75rem;
+    }
+    
+    .filter-btn {
+        padding: 0.375rem 0.625rem;
+        font-size: 0.75rem;
+    }
+    
+    .project-title {
+        font-size: 1rem;
+    }
+    
+    .gallery-thumbnails {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .images-preview {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Landscape (orientation paysage sur mobile) */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        padding: 1rem 0;
+    }
+    
+    .hero-content {
+        flex-direction: row;
+        gap: 2rem;
+    }
+    
+    .circle-gradient {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .login-container {
+        padding: 1rem;
+    }
+    
+    .login-box {
+        max-width: 600px;
+    }
+}
+
+/* Accessibilité - Préférence pour réduire les animations */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Dark Mode (si nécessaire) */
+@media (prefers-color-scheme: light) {
+    /* Styles pour le mode clair si souhaité */
+    /* Actuellement, le portfolio est conçu pour le mode sombre */
+}
+
+/* Print */
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+    
+    #main-header,
+    .filters,
+    .gallery-controls,
+    .btn-back,
+    .admin-header,
+    button {
+        display: none;
+    }
+    
+    .project-card,
+    .project-detail {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+}
