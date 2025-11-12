@@ -10,7 +10,8 @@
     
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-DTzhJ30-.css">
+  <script type="module" crossorigin src="/assets/index-zOyvveW1.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CxLsLcia.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -18,6 +19,7 @@
         <div class="container">
             <h1 class="logo">Mi Portfolio</h1>
             <nav>
+                <a href="cv.pdf" class="btn-primary" download>Télécharger mon CV</a>
                 <button id="admin-btn" class="btn-primary">Admin</button>
             </nav>
         </div>
@@ -35,13 +37,42 @@
                         <div class="hero-line"></div>
                     </div>
                     <div class="hero-visual">
-                        <div class="circle-gradient"></div>
+                        <div class="photo-portrait-wrapper">
+                            <img src="/assets/maPhoto-CRAHEPeg.png" alt="Photo de Thierry" class="photo-portrait">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Filtres -->
+       <!-- Grille de projets -->
+        <!-- Section À propos / CV -->
+        <div class="about-contact-wrapper">
+            <section class="about-cv-section">
+                <div class="container">
+                    <h2 class="section-title">À propos de moi</h2>
+                    <p class="about-desc">
+                        Passionné de design graphique, je réalise des créations pour entreprises et particuliers. Découvrez mon parcours, mes compétences et mes valeurs dans mon CV.
+                    </p>
+                    <a href="public/cv.pdf" class="btn-primary" download>Télécharger mon CV</a>
+                </div>
+            </section>
+            <section class="contact-section">
+                <div class="container">
+                    <h2 class="section-title">Contact</h2>
+                    <p class="contact-desc">Pour toute demande de projet, collaboration ou information, contactez-moi directement :</p>
+                    <div class="contact-links">
+                        <a href="tel:TON_NUMERO" class="contact-link btn-primary">Appeler</a>
+                        <a href="mailto:TON_EMAIL" class="contact-link btn-secondary">Envoyer un mail</a>
+                        <a href="https://www.linkedin.com/in/TON_LINKEDIN" class="contact-link" target="_blank">LinkedIn</a>
+                        <a href="https://www.instagram.com/TON_INSTAGRAM" class="contact-link" target="_blank">Instagram</a>
+                        <!-- Ajoute d'autres réseaux si besoin -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+         <!-- Filtres -->
         <section class="filters">
             <div class="container">
                 <div id="category-filters" class="filter-group">
@@ -165,13 +196,7 @@
     <!-- Supabase JS -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     
-    <!-- Scripts -->
-    <script src="js/config.js"></script>
-    <script src="js/supabase.js"></script>
-    <script src="js/home.js"></script>
-    <script src="js/project.js"></script>
-    <script src="js/admin.js"></script>
-    <script src="js/app.js"></script>
+    <!-- Scripts -->
     
     <script>
         // Initialiser les icônes Lucide
