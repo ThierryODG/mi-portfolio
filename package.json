@@ -1,5 +1,7 @@
 {
   "name": "mi-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio interactif avec Supabase et hébergement Vercel",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -7,9 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.81.0"
+    "@supabase/supabase-js": "^2.81.0",
+    "node-fetch": "^3.3.2"
   },
   "devDependencies": {
-    "vite": "^5.0.0"
-  }
+    "vite": "^7.2.2"
+  },
+  "author": "Votre Nom",
+  "license": "MIT"
 }
