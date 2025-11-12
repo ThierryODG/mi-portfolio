@@ -1,7 +1,7 @@
 {
   "name": "mi-portfolio",
   "version": "1.0.0",
-  "description": "Portfolio interactif avec Supabase - Gratuit sur Netlify",
+  "description": "Portfolio interactif avec Supabase et hébergement Vercel",
   "type": "module",
   "scripts": {
     "dev": "vite",

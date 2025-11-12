@@ -1,3 +1,124 @@
+/* Wrapper pour aligner À propos et Contact sur une ligne ou colonne selon la taille d'écran */
+.about-contact-wrapper {
+        display: flex;
+        gap: 2.5rem;
+        justify-content: center;
+        align-items: stretch;
+        margin: 2.5rem 0;
+}
+.about-contact-wrapper > .about-cv-section,
+.about-contact-wrapper > .contact-section {
+        margin: 0;
+        flex: 1 1 320px;
+        min-width: 0;
+}
+@media (max-width: 900px) {
+    .about-contact-wrapper {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+/* === SECTIONS À PROPOS & CONTACT === */
+.about-cv-section, .contact-section {
+    background: #fff;
+    border-radius: 1.25rem;
+    box-shadow: 0 4px 24px 0 rgba(10,35,66,0.10);
+    max-width: 600px;
+    margin: 2.5rem auto 2.5rem auto;
+    padding: 2.5rem 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-cv-section .section-title,
+.contact-section .section-title {
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+.about-cv-section .about-desc,
+.contact-section .contact-desc {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.about-cv-section .btn-primary {
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 260px;
+}
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.contact-link {
+    min-width: 120px;
+    text-align: center;
+}
+@media (max-width: 700px) {
+    .about-cv-section, .contact-section {
+        max-width: 98vw;
+        padding: 1.5rem 0.5rem;
+    }
+}
+.section-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+.about-desc, .contact-desc {
+    color: #222;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+.about-cv-section .btn-primary {
+    margin-top: 1rem;
+}
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.contact-link {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    background: var(--color-primary);
+    transition: background 0.2s, color 0.2s;
+}
+.contact-link.btn-secondary {
+    background: var(--color-secondary);
+}
+.contact-link:hover {
+    background: #e63946;
+    color: #fff;
+}
+/* Photo portrait moderne dans le hero */
+.photo-portrait-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 0;
+}
+.photo-portrait {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 24px 0 rgba(10,35,66,0.18);
+    background: #e5e7eb;
+    transition: box-shadow 0.2s;
+}
+.photo-portrait:hover {
+    box-shadow: 0 8px 32px 0 rgba(230,57,70,0.18);
+}
 /* ===== VARIABLES CSS ===== */
 :root {
     --color-primary: #060110FF;
@@ -8,7 +129,7 @@
     --color-gray: #94a3b8;
     --color-danger: #ef4444;
     
-    --gradient-primary: linear-gradient(135deg, var(--color-white), var(--color-secondary));
+    --gradient-primary: linear-gradient(135deg, var(--color-WHITE), var(--color-secondary));
     --gradient-bg: linear-gradient(to bottom right, #040222FF, #180584FF, #475C8DFF);
     
     --border-radius: 1rem;

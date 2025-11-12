@@ -93,14 +93,20 @@ function renderProjects(projects) {
     let html = '';
     
     projects.forEach((project, index) => {
-        const firstImage = project.images && project.images[0] ? project.images[0].image_url : '';
+        let firstImage = '';
+        let isPlaceholder = false;
+        if (project.images && project.images[0] && project.images[0].image_url) {
+            firstImage = project.images[0].image_url;
+        } else {
+            firstImage = 'placeholder.png';
+            isPlaceholder = true;
+        }
         const imageCount = project.images ? project.images.length : 0;
         const iconType = project.client_type === 'Entreprise' ? 'briefcase' : 'user';
-        
         html += `
             <div class="project-card" data-project-id="${project.id}" style="animation-delay: ${index * 0.1}s">
                 <div class="project-image">
-                    <img src="${firstImage}" alt="${project.title}" loading="lazy">
+                    <img src="${firstImage}" alt="${project.title}" loading="lazy" ${isPlaceholder ? 'class="placeholder-img"' : ''} onerror="this.onerror=null;this.src='placeholder.png';this.classList.add('placeholder-img');">
                 </div>
                 <div class="project-info">
                     <div class="project-meta">
